@@ -1,0 +1,53 @@
+macos-auto-secure-input = true
+macos-window-shadow = false
+macos-option-as-alt = left
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = visible
+macos-icon = retro
+
+theme = Jellybeans
+#background = 212121
+
+#font-family = CaskaydiaCove Nerd Font Mono
+font-family = ZedMono Nerd Font Mono
+font-size = 24
+
+cursor-style = block
+cursor-style-blink = true
+
+window-save-state = always
+window-padding-balance = true
+
+shell-integration-features = no-cursor
+quit-after-last-window-closed = true
+
+mouse-scroll-multiplier = 2
+mouse-hide-while-typing = true
+
+auto-update-channel = tip
+
+keybind = ctrl+a>n=new_window
+keybind = ctrl+a>r=reload_config
+keybind = ctrl+a>x=close_surface
+
+keybind = ctrl+a>t=new_tab
+keybind = ctrl+a>]=next_tab
+keybind = ctrl+a>[=previous_tab
+
+keybind = ctrl+a>/=new_split:right
+keybind = ctrl+a>-=new_split:down
+
+keybind = ctrl+a>j=goto_split:bottom
+keybind = ctrl+a>k=goto_split:top
+keybind = ctrl+a>h=goto_split:left
+keybind = ctrl+a>l=goto_split:right
+
+keybind = ctrl+a>z=toggle_split_zoom
+keybind = ctrl+a>enter=equalize_splits
+
+keybind = ctrl+cmd+h=resize_split:left,20
+keybind = ctrl+cmd+l=resize_split:right,20
+keybind = ctrl+cmd+j=resize_split:down,20
+keybind = ctrl+cmd+k=resize_split:up,20
+
+#copy-on-select = clipboard
