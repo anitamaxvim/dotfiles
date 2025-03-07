@@ -17,23 +17,20 @@ return {
       },
     })
 
-    lspconfig.pyright.setup({
+    lspconfig.basedpyright.setup({
       capabilities = capabilities,
       settings = {
-        pyright = {
-          -- Using Ruff's import organizer
-          disableOrganizeImports = true,
+        basedpyright = {
+          analysis = {
+            diagnosticMode = "openFilesOnly",
+            inlayHints = {
+              callArgumentNames = true,
+            },
+          },
         },
-        -- python = {
-        --   analysis = {
-        --     -- Ignore all files for analysis to exclusively use Ruff for linting
-        --     ignore = { "*" },
-        --   },
-        -- },
       },
     })
 
-    -- Disable conflicting capabilities ruff and pyright
     lspconfig.ruff.setup({ capabilities = capabilities })
 
     lspconfig.clangd.setup({
