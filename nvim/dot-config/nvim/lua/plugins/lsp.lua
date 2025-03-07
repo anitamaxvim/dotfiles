@@ -17,21 +17,21 @@ return {
       },
     })
 
-    lspconfig.basedpyright.setup({
+    lspconfig.ruff.setup({ capabilities = capabilities })
+
+    lspconfig.pyright.setup({
       capabilities = capabilities,
       settings = {
-        basedpyright = {
+        pyright = {
+          disableOrganizeImports = true, -- Using Ruff's import organizer
+        },
+        python = {
           analysis = {
-            diagnosticMode = "openFilesOnly",
-            inlayHints = {
-              callArgumentNames = true,
-            },
+            typeCheckingMode = "off",
           },
         },
       },
     })
-
-    lspconfig.ruff.setup({ capabilities = capabilities })
 
     lspconfig.clangd.setup({
       capabilities = capabilities,
