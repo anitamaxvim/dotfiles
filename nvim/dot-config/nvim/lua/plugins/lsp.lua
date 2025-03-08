@@ -27,7 +27,7 @@ return {
         },
         python = {
           analysis = {
-            typeCheckingMode = "off",
+            typeCheckingMode = "strict",
           },
         },
       },

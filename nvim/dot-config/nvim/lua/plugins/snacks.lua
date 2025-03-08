@@ -13,7 +13,7 @@ return {
     notifier = {},
     notify = {},
     git = {},
-    --TODO: add rename here
+    rename = {},
     scroll = {},
     -- statuscolumn = {},
     words = {},

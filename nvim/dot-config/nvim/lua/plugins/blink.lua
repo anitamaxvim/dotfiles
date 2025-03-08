@@ -8,7 +8,7 @@ return {
   version = "*",
   opts = {
     keymap = {
-      preset = "enter",
+      preset = "default",
       ["<C-u>"] = { "scroll_documentation_up", "fallback" },
       ["<C-d>"] = { "scroll_documentation_down", "fallback" },
     },
@@ -31,6 +31,12 @@ return {
     },
 
     completion = {
+      list = {
+        selection = {
+          preselect = false,
+        },
+      },
+
       accept = { auto_brackets = { enabled = true } },
 
       documentation = {

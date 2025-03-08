@@ -8,8 +8,8 @@ macos-icon = retro
 theme = Jellybeans
 #background = 212121
 
-#font-family = CaskaydiaCove Nerd Font Mono
-font-family = ZedMono Nerd Font Mono
+font-family = CaskaydiaCove Nerd Font Mono
+#font-family = ZedMono Nerd Font Mono
 font-size = 24
 
 cursor-style = block
