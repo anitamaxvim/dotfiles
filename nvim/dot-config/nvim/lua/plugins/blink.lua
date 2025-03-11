@@ -43,7 +43,7 @@ return {
         auto_show = true,
         auto_show_delay_ms = 0,
         treesitter_highlighting = true,
-        -- window = { border = "single" },
+        window = { border = "rounded" },
       },
 
       menu = {
@@ -52,7 +52,6 @@ return {
           treesitter = { "lsp" },
           columns = { { "kind_icon", "label", gap = 1 }, { "kind", gap = 1 } },
           components = {
-
             kind = {
               highlight = function(ctx)
                 local hl = "BlinkCmpKind" .. ctx.kind
@@ -107,7 +106,7 @@ return {
 
     signature = {
       enabled = true,
-      -- window = { border = "single" },
+      window = { border = "rounded" },
     },
   },
   opts_extend = { "sources.default" },

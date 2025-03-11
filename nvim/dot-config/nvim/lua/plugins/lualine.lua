@@ -10,7 +10,7 @@ return {
 
     lualine.setup({
       options = {
-        theme = require("rusty").lualine,
+        theme = require("vscode").lualine,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },

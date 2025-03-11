@@ -25,11 +25,11 @@ return {
         pyright = {
           disableOrganizeImports = true, -- Using Ruff's import organizer
         },
-        python = {
-          analysis = {
-            typeCheckingMode = "strict",
-          },
-        },
+        -- python = {
+        --   -- analysis = {
+        --   --   -- typeCheckingMode = "strict",
+        --   -- },
+        -- },
       },
     })
 

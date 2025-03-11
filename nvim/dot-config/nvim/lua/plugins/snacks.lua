@@ -5,7 +5,7 @@ return {
   opts = {
     animate = {},
     bigfile = {},
-    debug = {},
+    -- debug = {},
     dashboard = {},
     gitbrowse = {},
     lazygit = {},
@@ -13,10 +13,10 @@ return {
     notifier = {},
     notify = {},
     git = {},
-    rename = {},
+    -- rename = {},
     scroll = {},
     -- statuscolumn = {},
-    words = {},
+    -- words = {},
     styles = {},
     explorer = {
       enabled = true,

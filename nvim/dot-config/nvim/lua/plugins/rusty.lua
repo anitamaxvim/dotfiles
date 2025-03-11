@@ -1,13 +1,14 @@
 return {
 	"armannikoyan/rusty",
 	priority = 1000,
+  enabled=false,
 	opts = {
-		transparent = true,
+		transparent = false,
 		italic_comments = true,
-		underline_current_line = true,
+		underline_current_line = false,
 	},
-	config = function(_, opts)
-		require("rusty").setup(opts)
-		-- vim.cmd("colorscheme rusty")
-	end,
+	-- config = function(_, opts)
+	-- 	require("rusty").setup(opts)
+	-- 	vim.cmd("colorscheme rusty")
+	-- end,
 }
