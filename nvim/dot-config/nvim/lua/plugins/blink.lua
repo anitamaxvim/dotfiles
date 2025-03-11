@@ -50,7 +50,7 @@ return {
         -- border = "single",
         draw = {
           treesitter = { "lsp" },
-          columns = { { "kind_icon", "label", gap = 1 }, { "kind", gap = 1 } },
+          -- columns = { { "kind_icon", "label", gap = 1 }, { "kind", gap = 1 } },
           components = {
             kind = {
               highlight = function(ctx)
