@@ -18,7 +18,7 @@ return {
         BlinkCmpMenu = { bg = c.vscCursorDark },
       },
     })
-    require("vscode").load()
+    -- require("vscode").load()
     vim.cmd.colorscheme("vscode")
   end,
 }
