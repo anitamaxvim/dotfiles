@@ -10,9 +10,9 @@ return {
 
     lualine.setup({
       options = {
-        theme = require("vscode").lualine,
-        component_separators = { left = "", right = "" },
-        section_separators = { left = "", right = "" },
+        section_separators = "",
+        component_separators = "",
+        theme = "jellybeans",
       },
       sections = {
         lualine_a = { "mode" },

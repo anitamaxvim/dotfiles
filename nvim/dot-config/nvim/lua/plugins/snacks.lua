@@ -3,27 +3,20 @@ return {
   priority = 1000,
   lazy = false,
   opts = {
-    animate = {},
     bigfile = {},
-    -- debug = {},
     dashboard = {},
     gitbrowse = {},
     lazygit = {},
-    layout = {},
     notifier = {},
     notify = {},
     git = {},
     -- rename = {},
-    scroll = {},
-    -- statuscolumn = {},
-    -- words = {},
-    styles = {},
     explorer = {
       enabled = true,
       replace_netrw = true,
     },
     picker = {
-      layout = { preset = "default" },
+      layout = { preset = "left" },
       matcher = {
         cwd_bonus = true,
         frecency = true,

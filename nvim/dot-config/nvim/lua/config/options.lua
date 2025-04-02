@@ -1,9 +1,3 @@
--- Global editor settings ===================================================
--- Set leader and local leader inside lazy.lua.
--- vim.g.mapleader      = " "
--- vim.g.maplocalleader = " "
-vim.g.have_nerd_font = true
-
 -- Option settings ==========================================================
 vim.opt.relativenumber = true
 vim.opt.number = true
@@ -38,3 +32,6 @@ vim.opt.termguicolors = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
+
+vim.opt.winborder = "rounded"
+vim.diagnostic.config({ virtual_text = { current_line = true } })
