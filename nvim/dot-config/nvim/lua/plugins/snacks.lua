@@ -5,12 +5,15 @@ return {
   opts = {
     bigfile = {},
     dashboard = {},
+    git = {},
     gitbrowse = {},
     lazygit = {},
     notifier = {},
     notify = {},
-    git = {},
-    -- rename = {},
+    image = {},
+    -- indent = {},
+    rename = {},
+    scope = {},
     explorer = {
       enabled = true,
       replace_netrw = true,

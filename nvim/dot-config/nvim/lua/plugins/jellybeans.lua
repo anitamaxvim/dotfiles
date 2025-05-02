@@ -2,11 +2,10 @@ return {
   "wtfox/jellybeans.nvim",
   priority = 1000,
   lazy = false,
-  enabled = true,
   opts = {
     transparent = true,
     style = "dark",
-    italics = true,
+    -- italics = false,
     flat_ui = true,
     plugins = {
       all = false,
@@ -15,6 +14,6 @@ return {
   },
   config = function(_, opts)
     require("jellybeans").setup(opts)
-    vim.cmd([[colorscheme jellybeans]])
+    vim.cmd[[colorscheme jellybeans-muted]]
   end,
 }

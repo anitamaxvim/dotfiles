@@ -5,18 +5,14 @@ return {
     "nvim-tree/nvim-web-devicons",
     "rafamadriz/friendly-snippets",
   },
-  version = "*",
+  version = "1.*",
 
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
+  ---
   opts = {
-
-    keymap = {
-      preset = "enter",
-      ["<C-y"] = { "select_and_accept" },
-      -- ["<C-u>"] = { "scroll_documentation_up", "fallback" },
-      -- ["<C-d>"] = { "scroll_documentation_down", "fallback" },
-    },
+    keymap = { preset = "default" },
+    appearance = { nerd_font_variant = "mono" },
 
     sources = {
       default = { "lazydev", "lsp", "path", "snippets", "buffer" },
@@ -28,6 +24,8 @@ return {
         },
       },
     },
+
+    fuzzy = { implementation = "prefer_rust_with_warning" },
 
     signature = {
       enabled = true,
@@ -43,8 +41,6 @@ return {
       },
 
       documentation = {
-        -- auto_show = true,
-        -- auto_show_delay_ms = 0,
         treesitter_highlighting = true,
       },
 
@@ -52,10 +48,8 @@ return {
         border = "none",
         draw = {
           treesitter = { "lsp" },
-          columns = { { "kind_icon", "label", gap = 1 }, { "kind", gap = 1 } },
           components = {
             kind_icon = {
-              ellipsis = false,
               text = function(ctx)
                 local lspkind = require("lspkind")
                 local icon = ctx.kind_icon
@@ -88,4 +82,5 @@ return {
       },
     },
   },
+  opts_extend = { "sources.default" },
 }

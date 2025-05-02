@@ -12,7 +12,6 @@ return {
       options = {
         section_separators = "",
         component_separators = "",
-        theme = "jellybeans",
       },
       sections = {
         lualine_a = { "mode" },

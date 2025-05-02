@@ -1,8 +1,14 @@
 eval "$(starship init zsh)"
 
+# ENV VARS
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export EDITOR=/usr/local/bin/nvim
 export XDG_CONFIG_HOME=$HOME/.config
+
+# SECRETS
+if [ -f ~/.secrets ]; then
+  source ~/.secrets
+fi
 
 # GHOSTTY
 alias glt="ghostty +list-themes"

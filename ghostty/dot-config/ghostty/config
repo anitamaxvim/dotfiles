@@ -2,10 +2,9 @@ macos-auto-secure-input = true
 macos-secure-input-indication = true
 macos-option-as-alt = left
 macos-titlebar-proxy-icon = visible
-macos-window-shadow = false
-macos-icon = glass
+#macos-window-shadow = false
 
-#background = 212121
+#background = 0F0A14
 theme = Jellybeans
 font-family = Berkeley Mono
 font-size = 22
