@@ -1,11 +1,9 @@
 [user]
-  name = anitamaxvim
-  email = 107803920+anitamaxvim@users.noreply.github.com
+  name = Cozmo
+  email = 107803920+Cozmo18@users.noreply.github.com
 [core]
 	excludesfile = ~/.gitignore_global
   editor = nvim
-[ghq]
-  root = ~/Developer/ghq
 [color]
 	ui = true
 [init]
