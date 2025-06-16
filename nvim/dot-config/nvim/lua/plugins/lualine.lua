@@ -10,6 +10,7 @@ return {
 
     lualine.setup({
       options = {
+        theme = 'darcubox',
         section_separators = "",
         component_separators = "",
       },

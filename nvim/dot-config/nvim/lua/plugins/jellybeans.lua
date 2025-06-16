@@ -13,6 +13,6 @@ return {
   },
   config = function(_, opts)
     require("jellybeans").setup(opts)
-    vim.cmd[[colorscheme jellybeans-mono]]
+    -- vim.cmd[[colorscheme jellybeans-muted]]
   end,
 }
