@@ -2,9 +2,10 @@ return {
   "rose-pine/neovim",
   name = "rose-pine",
   opts = {
+    varient = "moon",
     styles = {
       bold = true,
-      italic = true,
+      italic = false,
       transparency = true,
     },
   },
