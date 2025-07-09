@@ -1,2 +1,2 @@
 -- Enable servers
-vim.lsp.enable({"ruff", "pyright", "ty", "luals", "clangd"})
+vim.lsp.enable({ "ruff", "pyright", "luals", "clangd" })

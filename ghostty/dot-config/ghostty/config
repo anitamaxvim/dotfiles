@@ -2,25 +2,19 @@ macos-auto-secure-input = true
 macos-secure-input-indication = true
 macos-option-as-alt = left
 macos-titlebar-proxy-icon = visible
-#macos-window-shadow = false
 
 background = 1a1a1a
 theme = rose-pine
-font-family = Berkeley Mono
-font-size = 22
-
-cursor-style = block
-cursor-style-blink = true
+font-family = MonoLisa Nerd Font Mono
 
 window-save-state = always
 window-padding-balance = true
 
-shell-integration-features = no-cursor
 quit-after-last-window-closed = true
 mouse-scroll-multiplier = 2
 mouse-hide-while-typing = true
 auto-update-channel = tip
-# Keybindings
+
 
 keybind = ctrl+a>n=new_window
 keybind = ctrl+a>r=reload_config
@@ -45,5 +39,3 @@ keybind = ctrl+cmd+h=resize_split:left,20
 keybind = ctrl+cmd+l=resize_split:right,20
 keybind = ctrl+cmd+j=resize_split:down,20
 keybind = ctrl+cmd+k=resize_split:up,20
-
-#copy-on-select = clipboard
