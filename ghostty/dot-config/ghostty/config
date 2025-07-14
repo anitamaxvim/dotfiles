@@ -1,24 +1,20 @@
-macos-auto-secure-input = true
-macos-secure-input-indication = true
+auto-update-channel = tip
+
+macos-non-native-fullscreen = visible-menu
 macos-option-as-alt = left
-macos-titlebar-proxy-icon = visible
+mouse-hide-while-typing = true
+
+shell-integration-features = no-cursor
 
 background = 1a1a1a
 theme = rose-pine
-font-family = MonoLisa Nerd Font Mono
-
-window-save-state = always
-window-padding-balance = true
-
-quit-after-last-window-closed = true
-mouse-scroll-multiplier = 2
-mouse-hide-while-typing = true
-auto-update-channel = tip
-
+font-family = Berkeley Mono
+font-size = 22
 
 keybind = ctrl+a>n=new_window
 keybind = ctrl+a>r=reload_config
 keybind = ctrl+a>x=close_surface
+keybind = ctrl+a>q=quit
 
 keybind = ctrl+a>t=new_tab
 keybind = ctrl+a>]=next_tab
@@ -38,4 +34,8 @@ keybind = ctrl+a>enter=equalize_splits
 keybind = ctrl+cmd+h=resize_split:left,20
 keybind = ctrl+cmd+l=resize_split:right,20
 keybind = ctrl+cmd+j=resize_split:down,20
-keybind = ctrl+cmd+k=resize_split:up,20
+keybind = ctrl+cmd+k=resize_split:up,21
+
+keybind = super+k=clear_screen
+keybind = super+c=copy_to_clipboard
+keybind = super+v=paste_from_clipboard
