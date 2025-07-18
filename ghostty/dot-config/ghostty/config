@@ -6,8 +6,8 @@ mouse-hide-while-typing = true
 
 shell-integration-features = no-cursor
 
-background = 1a1a1a
-theme = rose-pine
+#background = 1a1a1a
+theme = Jellybeans
 font-family = Berkeley Mono
 font-size = 22
 

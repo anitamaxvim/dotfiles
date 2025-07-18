@@ -5,14 +5,10 @@ return {
   opts = {
     transparent = true,
     italics = true,
-    flat_ui = true, -- toggles "flat UI" for pickers
-    plugins = {
-      all = false,
-      auto = true, -- will read lazy.nvim and apply the colors for plugins that are installed
-    },
+    bold = true,
   },
   config = function(_, opts)
     require("jellybeans").setup(opts)
-    -- vim.cmd[[colorscheme jellybeans-muted]]
+    vim.cmd([[colorscheme jellybeans]])
   end,
 }

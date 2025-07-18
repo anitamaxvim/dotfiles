@@ -25,10 +25,8 @@ return {
       },
     },
 
-    fuzzy = { implementation = "prefer_rust_with_warning" },
-
     signature = {
-      enabled = true,
+      enabled = false,
     },
 
     completion = {
