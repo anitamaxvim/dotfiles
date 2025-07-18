@@ -1,4 +1,8 @@
+autoload -Uz compinit && compinit
+
 eval "$(starship init zsh)"
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
 
 # ENV VARS
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
@@ -10,7 +14,6 @@ if [ -f ~/.secrets ]; then
   source ~/.secrets
 fi
 
-# GHOSTTY
 alias glt="ghostty +list-themes"
 
 # Git
@@ -56,9 +59,3 @@ alias stow-rm-all="stow -D */ --dotfiles"
 # AUTOSUGGESTIONS & SYNTAX HIGHLIGHTING
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-
-# Created by `pipx` on 2024-12-16 16:02:12
-export PATH="$PATH:/Users/dbozbay/.local/bin"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-eval "$(uv generate-shell-completion zsh)"
-eval "$(uvx --generate-shell-completion zsh)"

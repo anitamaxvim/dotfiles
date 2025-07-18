@@ -11,7 +11,7 @@ return {
   filetypes = { "lua" },
   settings = {
     Lua = {
-      -- diagnostics = { globals = { "vim" } },
+      diagnostics = { globals = { "vim" } },
       format = { enable = false },
     },
   },
